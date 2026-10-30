@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>منيو كبابجي أبو علي ريشة | الأسعار الرسمية والطلبات - طموه شارع السوق</title>
+  <meta name="description" content="القائمة الرسمية الكاملة وأسعار مطعم كبابجي أبو علي ريشة بطموه شارع السوق: المشويات على الفحم، الوجبات، الطواجن، المحاشي، البيتزا، المكرونات، الكريب، والحواوشي." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;600;700;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-main: #12100E;
+      --bg-card: #1A1613;
+      --bg-inner: #241E1A;
+      --border-color: #2E2621;
+      --gold: #F59E0B;
+      --gold-light: #FBBF24;
+      --text-main: #FAF6F0;
+      --text-muted: #A8A29E;
+      --emerald: #10B981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding-bottom: 72px;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    .num {
+      font-family: 'JetBrains Mono', monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      padding: 0 16px;
+      background: rgba(18, 16, 14, 0.95);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(8px);
+    }
+
+    .brand {
+      font-family: 'Amiri', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .top-call-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gold);
+      color: #12100E;
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 8px 14px;
+      border-radius: 12px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 20px 14px;
+    }
+
+    .hero-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-top {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+    }
+
+    .hero-title {
+      font-family: 'Amiri', serif;
+      font-size: 1.85rem;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+
+    .hero-sub {
+      font-size: 0.85rem;
+      color: #D6D3D1;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    @media (min-width: 640px) {
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .contact-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 48px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .contact-btn .phone {
+      color: var(--gold-light);
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .wallet-btn {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      width: 100%;
+      font-family: inherit;
+    }
+
+    .wallet-btn .label {
+      color: #6EE7B7;
+    }
+
+    .wallet-btn .phone {
+      color: #34D399;
+    }
+
+    .filter-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media (min-width: 768px) {
+      .filter-card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tab-btn {
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 8px 13px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      background: #14110F;
+      color: #D6D3D1;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn.active {
+      background: var(--gold);
+      color: #12100E;
+      border-color: var(--gold-light);
+    }
+
+    .search-input {
+      font-family: inherit;
+      width: 100%;
+      min-height: 42px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      border: 1px solid #3F362F;
+      background: #12100E;
+      color: var(--text-main);
+      font-size: 0.85rem;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--gold-light);
+    }
+
+    @media (min-width: 768px) {
+      .search-input {
+        width: 260px;
+      }
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    @media (min-width: 1024px) {
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .section-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .section-header {
+      background: var(--gold);
+      color: #12100E;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-title {
+      font-family: 'Amiri', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .size-headers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 165px;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 800;
+      gap: 6px;
+    }
+
+    .items-list {
+      padding: 4px 16px;
+    }
+
+    .item-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(46, 38, 33, 0.85);
+    }
+
+    .item-row:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #F5F5F4;
+    }
+
+    .item-desc {
+      font-size: 0.75rem;
+      color: #FCD34D;
+      margin-top: 2px;
+    }
+
+    .single-price {
+      background: var(--bg-inner);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 10px;
+      padding: 5px 12px;
+      white-space: nowrap;
+      font-weight: 800;
+      color: var(--gold-light);
+    }
+
+    .single-price small {
+      font-size: 0.75rem;
+      color: #D6D3D1;
+      margin-right: 3px;
+    }
+
+    .three-prices {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 165px;
+      gap: 6px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .price-box {
+      background: var(--bg-inner);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 5px 4px;
+      font-weight: 800;
+      color: var(--gold-light);
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      border-top: 1px solid var(--border-color);
+      background: #0D0B09;
+      padding: 20px 16px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 32px;
+    }
+
+    .mobile-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: rgba(18, 16, 14, 0.96);
+      border-top: 1px solid var(--border-color);
+      padding: 8px 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-bottom-bar {
+        display: none;
+      }
+    }
+
+    .mob-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border-radius: 10px;
+      background: var(--gold);
+      color: #12100E;
+      font-weight: 800;
+      font-size: 0.82rem;
+      text-decoration: none;
+    }
+
+    .mob-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      border-radius: 10px;
+      background: rgba(6, 95, 70, 0.45);
+      border: 1px solid rgba(16, 185, 129, 0.6);
+      color: #A7F3D0;
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="#" class="brand">كبابجي أبو علي ريشة</a>
+    <a href="tel:01117379780" class="top-call-btn">
+      <span>اتصل الآن:</span>
+      <span class="num">01117379780</span>
+    </a>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+      <div class="hero-top">
+        <h1 class="hero-title">منيو كبابجي أبو علي ريشة</h1>
+        <p class="hero-sub">العنوان: <strong>طموه - شارع السوق</strong> - اضغط على أي رقم للاتصال المباشر بدوسة واحدة</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="tel:01117379780" class="contact-btn">
+          <span>اتصال دليفري 1</span>
+          <span class="phone num">01117379780</span>
+        </a>
+        <a href="tel:01117320766" class="contact-btn">
+          <span>اتصال دليفري 2</span>
+          <span class="phone num">01117320766</span>
+        </a>
+        <a href="tel:01224642007" class="contact-btn">
+          <span>اتصال دليفري 3</span>
+          <span class="phone num">01224642007</span>
+        </a>
+        <button type="button" class="contact-btn wallet-btn" onclick="copyWallet()">
+          <span class="label" id="wallet-label">محفظة الكاش (نسخ)</span>
+          <span class="phone num">01100252534</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="filter-card">
+      <div class="tabs" id="category-tabs">
+        <button class="tab-btn active" onclick="filterCategory('all', this)">كل الأصناف</button>
+        <button class="tab-btn" onclick="filterCategory('grills', this)">المشويات</button>
+        <button class="tab-btn" onclick="filterCategory('meals', this)">الوجبات</button>
+        <button class="tab-btn" onclick="filterCategory('tagines', this)">الطواجن</button>
+        <button class="tab-btn" onclick="filterCategory('mahashi', this)">المحاشي</button>
+        <button class="tab-btn" onclick="filterCategory('pizza', this)">البيتزا</button>
+        <button class="tab-btn" onclick="filterCategory('pasta', this)">المكرونات</button>
+        <button class="tab-btn" onclick="filterCategory('crepe', this)">الكريب</button>
+        <button class="tab-btn" onclick="filterCategory('hawawshi', this)">الحواوشي</button>
+      </div>
+      <input
+        type="search"
+        id="search-box"
+        class="search-input"
+        placeholder="ابحث بسرعة (كفتة، طرب، بيتزا، حواوشي...)"
+        oninput="renderMenu()"
+      />
+    </section>
+
+    <div id="menu-container" class="menu-grid"></div>
+  </main>
+
+  <footer class="footer">
+    <div><strong>كبابجي أبو علي ريشة</strong> - العنوان: طموه - شارع السوق</div>
+    <div class="num" style="margin-top:4px;">01117379780 - 01117320766 - 01224642007</div>
+  </footer>
+
+  <div class="mobile-bottom-bar">
+    <a href="tel:01117379780" class="mob-call">اتصال دليفري بدوسة واحدة</a>
+    <a href="https://wa.me/201117379780" target="_blank" rel="noopener" class="mob-wa">تواصل عبر واتساب</a>
+  </div>
+
+  <script>
+    const MENU_DATA = [
+      {
+        id: 'grills',
+        title: 'المشويات',
+        threeSizes: false,
+        items: [
+          { name: 'كفتة ضاني', price: 480 },
+          { name: 'طرب ضاني', price: 520 },
+          { name: 'سجق ضاني', price: 480 },
+          { name: 'كفتة بلدي', price: 340 },
+          { name: 'فراخ شواية', price: 260 },
+          { name: 'فراخ شيش', price: 260 },
+          { name: 'حمام محشي', price: 340 },
+          { name: 'ممبار بلدي', price: 300 },
+          { name: 'كبدة بانيه', price: 300 }
+        ]
+      },
+      {
+        id: 'meals',
+        title: 'الوجبات',
+        threeSizes: false,
+        items: [
+          { name: 'وجبة ربع فرخة', desc: 'ربع فرخة + أرز بسمتي + سلطات + عيش', price: 100 },
+          { name: 'وجبة ربع كفتة', desc: 'ربع كفتة + أرز بسمتي + سلطات + عيش', price: 100 },
+          { name: 'وجبة ربع فرخة + ٢ قطعة كفتة', desc: 'ربع فرخة + ٢ قطعة كفتة + أرز بسمتي + سلطات + عيش', price: 120 },
+          { name: 'وجبة ربع فرخة + ربع كفتة', desc: 'ربع فرخة + ربع كفتة + أرز بسمتي + سلطات + عيش', price: 175 }
+        ]
+      },
+      {
+        id: 'tagines',
+        title: 'الطواجن',
+        threeSizes: false,
+        items: [
+          { name: 'طاجن ملوخية', price: 100 },
+          { name: 'طاجن بامية', price: 100 },
+          { name: 'طاجن بسلة', price: 100 },
+          { name: 'طاجن بطاطس', price: 100 },
+          { name: 'طاجن لحمة بالبصل', price: 100 },
+          { name: 'طاجن سجق', price: 100 }
+        ]
+      },
+      {
+        id: 'mahashi',
+        title: 'المحاشي',
+        threeSizes: true,
+        items: [
+          { name: 'محشي ورق عنب', prices: [50, 100, 150] },
+          { name: 'محشي بتنجان', prices: [50, 100, 150] },
+          { name: 'محشي كوسة', prices: [50, 100, 150] },
+          { name: 'محشي فلفل', prices: [50, 100, 150] }
+        ]
+      },
+      {
+        id: 'pizza',
+        title: 'البيتزا',
+        threeSizes: true,
+        items: [
+          { name: 'بيتزا فراخ', prices: [100, 130, 160] },
+          { name: 'بيتزا لحمة', prices: [100, 130, 160] },
+          { name: 'بيتزا سجق', prices: [100, 130, 160] },
+          { name: 'بيتزا مرجريتا', prices: [100, 130, 160] },
+          { name: 'بيتزا ماكس جبن', prices: [100, 130, 160] },
+          { name: 'بيتزا زنجر', prices: [100, 130, 160] }
+        ]
+      },
+      {
+        id: 'pasta',
+        title: 'المكرونات',
+        threeSizes: true,
+        items: [
+          { name: 'مكرونة باللحمة', prices: [50, 80, 100] },
+          { name: 'مكرونة بالفراخ', prices: [70, 100, 120] },
+          { name: 'مكرونة بالكفتة', prices: [70, 100, 120] },
+          { name: 'مكرونة بالسجق', prices: [70, 100, 120] },
+          { name: 'مكرونة بالزنجر', prices: [70, 100, 120] },
+          { name: 'أرز بسمتي', prices: [25, 40, 50] }
+        ]
+      },
+      {
+        id: 'crepe',
+        title: 'الكريب',
+        threeSizes: true,
+        items: [
+          { name: 'كريب شاورمة', prices: [60, 70, 80] },
+          { name: 'كريب لحمة', prices: [40, 50, 60] },
+          { name: 'كريب زنجر', prices: [60, 70, 80] },
+          { name: 'كريب بانيه', prices: [40, 50, 60] },
+          { name: 'كريب سوسيس', prices: [40, 50, 60] },
+          { name: 'كريب برجر', prices: [40, 50, 60] },
+          { name: 'كريب بطاطس', prices: [40, 50, 60] }
+        ]
+      },
+      {
+        id: 'hawawshi',
+        title: 'الحواوشي',
+        threeSizes: true,
+        items: [
+          { name: 'حواوشي ضاني', prices: [50, 70, 100] },
+          { name: 'حواوشي كفتة', prices: [30, 40, 50] },
+          { name: 'حواوشي فراخ', prices: [40, 50, 60] },
+          { name: 'حواوشي طرب', prices: [40, 50, 60] },
+          { name: 'حواوشي سجق', prices: [40, 50, 60] },
+          { name: 'حواوشي جبنة', prices: [40, 50, 60] }
+        ]
+      }
+    ];
+
+    let currentCategory = 'all';
+
+    function normalizeAr(str) {
+      return (str || '')
+        .trim()
+        .toLowerCase()
+        .replace(/[أإآ]/g, 'ا')
+        .replace(/ة/g, 'ه')
+        .replace(/ى/g, 'ي');
+    }
+
+    function filterCategory(catId, btnEl) {
+      currentCategory = catId;
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+      renderMenu();
+    }
+
+    function renderMenu() {
+      const query = normalizeAr(document.getElementById('search-box').value);
+      const container = document.getElementById('menu-container');
+      let html = '';
+
+      MENU_DATA.forEach(section => {
+        if (currentCategory !== 'all' && section.id !== currentCategory) return;
+
+        const filtered = section.items.filter(item => {
+          if (!query) return true;
+          return (
+            normalizeAr(item.name).includes(query) ||
+            normalizeAr(section.title).includes(query) ||
+            normalizeAr(item.desc || '').includes(query)
+          );
+        });
+
+        if (filtered.length === 0) return;
+
+        html += `<section class="section-card">
+          <div class="section-header">
+            <h2 class="section-title">${section.title}</h2>
+            ${
+              section.threeSizes
+                ? `<div class="size-headers"><span>صغير</span><span>وسط</span><span>كبير</span></div>`
+                : `<span style="font-size:0.8rem;font-weight:800;">السعر (ج.م)</span>`
+            }
+          </div>
+          <div class="items-list">`;
+
+        filtered.forEach(item => {
+          html += `<div class="item-row">
+            <div>
+              <div class="item-name">${item.name}</div>
+              ${item.desc ? `<div class="item-desc">${item.desc}</div>` : ''}
+            </div>
+            ${
+              section.threeSizes
+                ? `<div class="three-prices">
+                    <div class="price-box num">${item.prices[0]}</div>
+                    <div class="price-box num">${item.prices[1]}</div>
+                    <div class="price-box num">${item.prices[2]}</div>
+                  </div>`
+                : `<div class="single-price"><span class="num">${item.price}</span> <small>ج.م</small></div>`
+            }
+          </div>`;
+        });
+
+        html += `</div></section>`;
+      });
+
+      container.innerHTML = html || `<div style="grid-column:1/-1;text-align:center;padding:32px;background:#1A1613;border-radius:16px;">لا يوجد صنف مطابق للبحث</div>`;
+    }
+
+    function copyWallet() {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText('01100252534');
+      }
+      const lbl = document.getElementById('wallet-label');
+      lbl.textContent = 'تم نسخ المحفظة';
+      setTimeout(() => {
+        lbl.textContent = 'محفظة الكاش (نسخ)';
+      }, 2000);
+    }
+
+    renderMenu();
+  </script>
+</body>
+  </html>
